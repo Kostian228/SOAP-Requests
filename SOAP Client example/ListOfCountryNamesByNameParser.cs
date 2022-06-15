@@ -18,15 +18,15 @@ namespace SOAP_Client_example
 
         private Country GetCountry(XElement xElement, XNamespace ns)
         {
-            var loginResponse = new Country
+            var country = new Country
             {
                 ISOCode = xElement.Element(ns + "sISOCode")?.Value,
                 Name = xElement.Element(ns + "sName")?.Value
             };
 
-            return loginResponse;
-    }
+            return country;
         }
+    }
 
     public class Country
     {

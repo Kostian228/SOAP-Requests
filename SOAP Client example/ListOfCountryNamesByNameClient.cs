@@ -11,7 +11,7 @@ namespace SOAP_Client_example
         public ListOfCountryNamesByNameClient(string serviceUrl, string soapActionUrl)
         {
             if (string.IsNullOrEmpty(serviceUrl)) throw new ArgumentException("service url cannot be null or empty");
-            if (string.IsNullOrEmpty(soapActionUrl)) throw new ArgumentException("service url cannot be null or empty");
+            if (string.IsNullOrEmpty(soapActionUrl)) throw new ArgumentException("soap action url cannot be null or empty");
             
             _serviceUrl = serviceUrl;
             _soapActionUrl = soapActionUrl;
